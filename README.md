@@ -31,8 +31,13 @@ Uso de la Aplicación 📖
 Estructura del Proyecto 📂
 
 |-- assets
+
     |-- amigo-secreto.png
+    
     |-- play_circle_outline.png
+    
 |-- app.js
+
 |-- index.html
+
 |-- style.css
