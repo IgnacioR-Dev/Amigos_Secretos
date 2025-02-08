@@ -216,7 +216,6 @@ ul {
     }
 }
 
-
 /* Botón de sortear título */
 .button-draw {
     display: flex;
@@ -249,59 +248,84 @@ ul {
 }
 
 /* Media queries para diseño responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .input-section {
+        flex: 100%;
+        border-radius: 24px;
+    }
+
+    .header-banner {
+        flex: 100%;
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 45px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
     .input-wrapper {
         flex-direction: column;
-        align-items: stretch;
+        max-width: 100%;
         margin-top: 10px;
     }
 
-    .input-name {
-        margin-bottom: 10px;
-        border-radius: 25px;
-    }
-
-    .button-container {
+    .input-name,
+    .button-container button {
         width: 100%;
-        text-align: center;
+        font-size: 14px;
     }
 
-    button {
-        width: 100%;
-        margin-bottom: 10px;
+    .card {
+        max-width: 100%;
     }
 
-    .button-draw img {
-        margin-right: 10px;
+    .result-list {
+        font-size: 28px;
     }
 }
 
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .input-wrapper {
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 15px;
+        margin-top: 20px;
+    }
+
+    .input-name {
+        width: 70%;
     }
 
     .button-container {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
-    button {
-        width: 48%;
+    .card {
+        max-width: 45%;
     }
 
-    .button-draw img {
-        margin-right: 20px;
+    .main-title {
+        font-size: 50px;
+    }
+
+    .result-list {
+        font-size: 32px;
     }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1025px) {
     .input-wrapper {
         flex-direction: row;
         justify-content: center;
         margin-top: 20px;
+    }
+
+    .input-name {
+        width: 50%;
     }
 
     .button-container {
@@ -309,11 +333,11 @@ ul {
         text-align: center;
     }
 
-    button {
-        width: auto;
+    .card {
+        max-width: 300px;
     }
 
-    .button-draw img {
-        margin-right: 40px;
+    .result-list {
+        font-size: 38px;
     }
 }
